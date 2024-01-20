@@ -1,8 +1,10 @@
 # Labwork2
 
-Objective of the work: to study basic concepts (classes, subclasses, and methods). Implement fundamental principles of object-oriented programming.
+Objective of the work: to study the principle of Object-Oriented Programming (OOP) inheritance. Implement the fundamental principles of object-oriented programming.
 
 Task:
-Create a class description for vector objects defined by coordinates of endpoints in three-dimensional space. Provide operations for vector addition and subtraction to obtain a new vector (sum or difference), calculation of the scalar product of two vectors, vector length, and cosine of the angle between vectors. Write a program demonstrating the class's functionality, including a menu for testing all class methods.
+Write a program demonstrating the interaction with objects of two types, T1 and T2, by creating a system of corresponding classes. Each object should have an identifier (in the form of an arbitrary string of characters) and one or more fields to store the object's state (current values).
+The client (main function) should have access to the following basic operations (methods): create an object, delete an object, show the value of an object, and other additional operations (depending on the variant). Encapsulate the operations for creating and deleting objects in the Factory class. Provide a menu allowing the demonstration of the specified operations.
+If necessary, additional methods (e.g., copy constructor, assignment operation, etc.) should be added to the developed classes to ensure their proper functioning.
 
-During this laboratory work, I studied basic concepts (classes, subclasses, and methods) and learned to implement the fundamental principles of object-oriented programming.
+During this laboratory work, I studied fundamental concepts (classes, subclasses, and methods) and learned to implement the fundamental principles of object-oriented programming.
