@@ -1,4 +1,4 @@
-# Labwork2
+# Labwork 2
 
 Objective of the work: to study the principle of Object-Oriented Programming (OOP) inheritance. Implement the fundamental principles of object-oriented programming.
 
