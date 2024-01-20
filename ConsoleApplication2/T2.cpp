@@ -1,21 +1,21 @@
 #include "T2.h"
 #include <bitset>
-// Реализация конструктора класса T2
+// Р РµР°Р»РёР·Р°С†РёСЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° РєР»Р°СЃСЃР° T2
 T2::T2(const std::string& id, int value) : BaseClass(id), value(value) {}
 
-// Реализация методов класса T2
+// Р РµР°Р»РёР·Р°С†РёСЏ РјРµС‚РѕРґРѕРІ РєР»Р°СЃСЃР° T2
 
 void T2::ShowBin() const {
-    std::cout << "Двоичная строка: " << std::bitset<32>(value) << std::endl;
+    std::cout << "Р”РІРѕРёС‡РЅР°СЏ СЃС‚СЂРѕРєР°: " << std::bitset<32>(value) << std::endl;
 }
 
 void T2::ShowOct() const {
-    std::cout << "Восьмеричная строка: " << std::oct << value << std::endl;
+    std::cout << "Р’РѕСЃСЊРјРµСЂРёС‡РЅР°СЏ СЃС‚СЂРѕРєР°: " << std::oct << value << std::endl;
 }
 
 void T2::ShowHex() const {
-    std::cout << "Шестнадцатеричная строка: " << std::hex << value << std::endl;
+    std::cout << "РЁРµСЃС‚РЅР°РґС†Р°С‚РµСЂРёС‡РЅР°СЏ СЃС‚СЂРѕРєР°: " << std::hex << value << std::endl;
 }
 void T2::ShowValue() const {
-    std::cout << "Значение(в десятичной системе): " << std::dec << value << std::endl;
+    std::cout << "Р—РЅР°С‡РµРЅРёРµ(РІ РґРµСЃСЏС‚РёС‡РЅРѕР№ СЃРёСЃС‚РµРјРµ): " << std::dec << value << std::endl;
 }
