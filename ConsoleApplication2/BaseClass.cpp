@@ -1,17 +1,17 @@
 #include "BaseClass.h"
 
 void BaseClass::ShowBin() const {
-    std::cout << "Äâîè÷íàÿ ñòðîêà: Íå ðåàëèçîâàíî" << std::endl;
+    std::cout << "Ð”Ð²Ð¾Ð¸Ñ‡Ð½Ð°Ñ ÑÑ‚Ñ€Ð¾ÐºÐ°: ÐÐµ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð¾Ð²Ð°Ð½Ð¾" << std::endl;
 }
 
 void BaseClass::ShowOct() const {
-    std::cout << "Âîñüìåðè÷íàÿ ñòðîêà: Íå ðåàëèçîâàíî" << std::endl;
+    std::cout << "Ð’Ð¾ÑÑŒÐ¼ÐµÑ€Ð¸Ñ‡Ð½Ð°Ñ ÑÑ‚Ñ€Ð¾ÐºÐ°: ÐÐµ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð¾Ð²Ð°Ð½Ð¾" << std::endl;
 }
 
 void BaseClass::ShowHex() const {
-    std::cout << "Øåñòíàäöàòåðè÷íàÿ ñòðîêà: Íå ðåàëèçîâàíî" << std::endl;
+    std::cout << "Ð¨ÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÐµÑ€Ð¸Ñ‡Ð½Ð°Ñ ÑÑ‚Ñ€Ð¾ÐºÐ°: ÐÐµ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð¾Ð²Ð°Ð½Ð¾" << std::endl;
 }
 
 void BaseClass::ShowValue() const {
-   std::cout << "Çíà÷åíèå: Íå ðåàëèçîâàíî" << std::endl;
+   std::cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: ÐÐµ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð¾Ð²Ð°Ð½Ð¾" << std::endl;
 }
