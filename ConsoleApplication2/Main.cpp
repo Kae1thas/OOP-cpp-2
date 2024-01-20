@@ -6,29 +6,29 @@ int main() {
     setlocale(LC_ALL, "Russian");
     
     if (testT1() && testT2()) {
-        std::cout << "Þíèò-òåñòû ïðîéäåíû óñïåøíî!" << std::endl;
+        std::cout << "Ð®Ð½Ð¸Ñ‚-Ñ‚ÐµÑÑ‚Ñ‹ Ð¿Ñ€Ð¾Ð¹Ð´ÐµÐ½Ñ‹ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾!" << std::endl;
     }
     else {
-        std::cerr << "Þíèò-òåñòû íå ïðîéäåíû!" << std::endl;
+        std::cerr << "Ð®Ð½Ð¸Ñ‚-Ñ‚ÐµÑÑ‚Ñ‹ Ð½Ðµ Ð¿Ñ€Ð¾Ð¹Ð´ÐµÐ½Ñ‹!" << std::endl;
     }
 
     BaseClass* obj = nullptr;
     int choice;
 
     do {
-        std::cout << "\n1. Ñîçäàòü è âûïîëíèòü îïåðàöèè äëÿ T1" << std::endl;
-        std::cout << "2. Ñîçäàòü è âûïîëíèòü îïåðàöèè äëÿ T2" << std::endl;
-        std::cout << "0. Âûõîä \n" << std::endl;
+        std::cout << "\n1. Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¸ Ð²Ñ‹Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÑŒ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸ Ð´Ð»Ñ T1" << std::endl;
+        std::cout << "2. Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¸ Ð²Ñ‹Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÑŒ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸ Ð´Ð»Ñ T2" << std::endl;
+        std::cout << "0. Ð’Ñ‹Ñ…Ð¾Ð´ \n" << std::endl;
 
-        std::cout << "Ââåäèòå êîìàíäó: \n";
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ: \n";
         std::cin >> choice;
 
         switch (choice) {
         case 1: {
             std::string id, value;
-            std::cout << "Ââåäèòå ID äëÿ T1: ";
+            std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ID Ð´Ð»Ñ T1: ";
             std::cin >> id;
-            std::cout << "Ââåäèòå Çíà÷åíèå äëÿ T1: ";
+            std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ T1: ";
             std::cin >> value;
             obj = Factory::CreateT1(id, value);
             break;
@@ -36,15 +36,15 @@ int main() {
         case 2: {
             std::string id;
             int value;
-            std::cout << "Ââåäèòå ID äëÿ T2: ";
+            std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ID Ð´Ð»Ñ T2: ";
             std::cin >> id;
             while (true) {
-                std::cout << "Ââåäèòå Çíà÷åíèå äëÿ T2: ";
+                std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ T2: ";
                 if (std::cin >> value) {
                     break;
                 }
                 else {
-                    std::cerr << "Îøèáêà ââîäà! Ââåäèòå öåëî÷èñëåííîå çíà÷åíèå." << std::endl;
+                    std::cerr << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ»Ð¾Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ." << std::endl;
                     std::cin.clear(); 
                     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 }
@@ -53,10 +53,10 @@ int main() {
             break;
         }
         case 0:
-            std::cout << "Âûõîä èç ïðîãðàììû." << std::endl;
+            std::cout << "Ð’Ñ‹Ñ…Ð¾Ð´ Ð¸Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹." << std::endl;
             break;
         default:
-            std::cout << "Íåèçâåñòíàÿ êîìàíäà." << std::endl;
+            std::cout << "ÐÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ð°Ñ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð°." << std::endl;
         }
 
         if (obj != nullptr) {
